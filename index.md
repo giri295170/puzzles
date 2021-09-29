@@ -12,8 +12,8 @@ Take index 0, it has having value 1, then you must need to have one zero in the 
 Next take index 1, It has has value 2, then you must need to have two 1's in the 5 digit number.
 Next index 3, 4 & 5 same step follow.
 You need to form a number which satisfies all the 5 digits.
-Lets take another [example: 40000](https://raw.githubusercontent.com/velli2029056/puzzles/main/puzz.png)
-In this 40000 number, it satisfies 0th,1st, 2nd and 3rd indexes. But 4th index fails, because in the number one 4 is there. If you kept 1 in the 4th index then it fails 0th and 1st indexes (40001). So you need to form a number ,it satisfies all the indexes.
+Lets take another [example: 40000](https://raw.githubusercontent.com/velli2029056/puzzles/main/puzz.png).
+In this 40000 number, it satisfies 0th, 1st, 2nd and 3rd indexes. But 4th index fails, because in the number one 4 is there. If you kept 1 in the 4th index then it fails 0th and 1st indexes (40001). So you need to form a number ,it satisfies all the indexes.
 What was the 5 digit number , it satisfies all the indexes?
 
 ## Puzzle 3
