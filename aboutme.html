@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giri | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --linkedin-blue: #0a66c2;
+            --linkedin-dark: #000000e6;
+            --linkedin-gray: #666666;
+            --linkedin-light-gray: #eef3f8;
+            --linkedin-white: #ffffff;
+            --linkedin-border: #d0d0d0;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f2ef;
+            color: var(--linkedin-dark);
+            line-height: 1.5;
+        }
+        .linkedin-container {
+            max-width: 1128px;
+            margin: 24px auto;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 24px;
+        }
+        .profile-card {
+            background: var(--linkedin-white);
+            border-radius: 10px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .profile-banner {
+            height: 80px;
+            background-color: var(--linkedin-blue);
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--linkedin-white);
+            margin-top: -60px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+        }
+        .profile-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 15px 0 5px;
+        }
+        .profile-title {
+            color: var(--linkedin-gray);
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 1px solid var(--linkedin-border);
+            border-bottom: 1px solid var(--linkedin-border);
+            margin: 0 15px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-weight: 600;
+            color: var(--linkedin-blue);
+            font-size: 18px;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: var(--linkedin-gray);
+        }
+        .profile-about {
+            padding: 15px;
+            text-align: left;
+        }
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            margin-right: 8px;
+            color: var(--linkedin-blue);
+        }
+        .about-content {
+            margin-bottom: 20px;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: var(--linkedin-light-gray);
+            color: var(--linkedin-blue);
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 5px 5px 5px 0;
+            font-size: 14px;
+        }
+        .main-content {
+            background: var(--linkedin-white);
+            border-radius: 10px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            padding: 20px;
+        }
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--linkedin-border);
+            padding-bottom: 15px;
+        }
+
+        .content-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--linkedin-border);
+        }
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        .company-name {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            color: var(--linkedin-gray);
+            margin-bottom: 5px;
+        }
+        .job-duration {
+            font-size: 14px;
+            color: var(--linkedin-gray);
+            margin-bottom: 10px;
+        }
+        .job-description {
+            margin-top: 10px;
+        }
+        .connect-btn {
+            background-color: var(--linkedin-white);
+            color: var(--linkedin-blue);
+            border: 1px solid var(--linkedin-blue);
+            border-radius: 15px;
+            padding: 5px 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+        .connect-btn:hover {
+            background-color: rgba(10, 102, 194, 0.1);
+            border-width: 2px;
+        }
+        @media (max-width: 768px) {
+            .linkedin-container {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="linkedin-container">
+    <!-- Left Column - Profile Card -->
+    <div class="profile-card">
+        <div class="profile-banner"></div>
+        <img src="images/image.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="profile-name">Giri</h1>
+        <p class="profile-title">Full Stack Developer | Java & Microsoft 365 Expert</p>
+        <div class="profile-stats">
+            <div class="stat-item">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years Exp</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Skills</div>
+            </div>
+        </div>
+        <div class="profile-about">
+            <div class="section-title"><i class="fas fa-user"></i> About</div>
+            <div class="about-content">
+                Highly motivated Software Developer with 4+ years of experience in designing and developing web applications.
+            </div>
+            <div class="section-title"><i class="fas fa-cog"></i> Skills</div>
+            <div>
+                <span class="skill-tag">Java (Advanced)</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">System Design</span>
+                <span class="skill-tag">Data Structures and Algorithm</span>
+            </div>
+        </div>
+    </div>
+    <!-- Right Column - Main Content -->
+    <div class="main-content">
+        <div class="content-header">
+            <div class="content-title">Experience</div>
+        </div>
+        <div class="experience-item">
+            <div class="company-name">Zoho Corporation Private Limited</div>
+            <div class="job-title">Member Of Technical Staff, Chennai</div>
+            <div class="job-duration">2021 Dec - Present · 3 yrs</div>
+            <div class="job-description">
+                <ul>
+                    <li>Designed and developed an Identity Risk Assessment feature for Microsoft 365, enabling IT admins to detect
+                risky objects within the organization efficiently. Identified and released 13 risk indicators by analyzing
+                Microsoft 365 services, including Outlook, Teams, Entra ID, and Exchange Online.
+                    </li>
+                    <li>Developed a user onboarding and offboarding operations by leveraging Microsoft 365 APIs (Create/Modify
+                bulk users in Microsoft 365). Migrated PowerShell-based operations to Microsoft Graph API for improved
+                efficiency and security.
+                    </li>
+                    <li>Part of the internal security team, actively resolving security issues and enhancingproduct security.Reported
+                multiple security vulnerabilities in internal Zoho applications, participated in the internal bug bounty
+                program, and received a reward. Explored various Windows Active Directory attacks and provided
+                knowledge transfer sessions to the internal team. Recognized with the Security Player Award for significant
+                contributions to security initiatives.
+                    </li>
+                    <li> Experienced in Windows ActiveDirectory and Exchange administration. Mentored and guided internal team
+                members, sharing knowledge to enhance productivity and expertise.
+                    <li>Experienced in handling customer issues and providing effective solutions.
+                    </li>
+                    <li>C, JAVA, Ember.Js,Tomcat,PostGresSQL.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="company-name">Newgen Software Technologies</div>
+            <div class="job-title">Software Development Engineer, Chennai</div>
+            <div class="job-duration">2020 Jan - 2021 Dec· 1 yr</div>
+            <div class="job-description">
+                <ul>
+                    <li>Developed APIs for image file formats conversion. Used Tesseract and Leptonica libraries to extracted the
+                    text from image. Migrated Win32 libraries to native C, ensuring compatibility with Android applications.
+                    </li>
+                    <li>Researched Blockchain and NFTs, created an NFT-based document signing and verification system. Explored
+                    WebAssembly and successfully compiled an Image-to-PDF conversion application into WebAssembly for
+                    web-based execution.
+                    </li>
+                    <li>Successfully managed multiple product releases, ensuring timely delivery. Recognized with the High Five
+                    Award in an internal town hall event for outstanding contributions.
+                    </li>
+                    <li>C, Win32, React.JS, Web Assembly, Blockchain, NFT.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-header" style="margin-top: 30px;">
+            <div class="content-title">Hobbies & Interests</div>
+        </div>
+        <div class="experience-item">
+            <div class="job-description">
+                <p><i class="fas fa-chess" style="color: var(--linkedin-blue); margin-right: 8px;"></i> Playing Chess</p>
+                <p><i class="fas fa-code" style="color: var(--linkedin-blue); margin-right: 8px;"></i> Coding</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
