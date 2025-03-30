@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tabs</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        
+        /* Navigation Tabs */
+        .tabs { 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+            flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
+            margin: 20px 0;
+        }
+        
+        .tab { 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            background: #007bff; 
+            color: white; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            border: none;
+            font-size: 16px;
+        }
+        
+        .tab:hover { background: #0056b3; }
+
+        /* Content Sections */
+        .content { display: none; margin-top: 20px; padding: 20px; }
+        .active { display: block; }
+
+        /* Responsive Styling */
+        @media (max-width: 600px) {
+            .tabs { flex-direction: column; gap: 10px; } /* Stack tabs vertically on small screens */
+            .tab { width: 80%; padding: 12px; font-size: 18px; } /* Larger buttons for touchscreens */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <button class="tab" onclick="openTab('home')">Home</button>
+        <button class="tab" onclick="openTab('about')">About</button>
+        <button class="tab" onclick="openTab('contact')">Contact</button>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="home" class="content active">
+        <h2>Welcome to Home</h2>
+        <p>This is the Home section.</p>
+    </div>
+    <div id="about" class="content">
+        <h2>About Me</h2>
+        <p>Some information about me.</p>
+    </div>
+    <div id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Get in touch with me.</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            document.querySelectorAll(".content").forEach(tab => tab.classList.remove("active"));
+            document.getElementById(tabName).classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
